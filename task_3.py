@@ -18,6 +18,7 @@ def create_dictionary(num: int) -> Dict[str, str]:
     for pair in range(num):
         word, antonym = input().strip().split()
         ant_dict[word] = antonym
+        ant_dict[antonym] = word
 
     return ant_dict
 
